@@ -10,7 +10,7 @@ export default class TesztKerdesek {
   }
 
   megjelenit() {
-    console.log("kérdés megjelenítés");
+    console.log("Kérdés megjelenítés");
     this.szuloElem.innerHTML = ""; 
 
     if (!this.#lista || this.#lista.length <= 2) {
