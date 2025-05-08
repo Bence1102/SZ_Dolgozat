@@ -8,13 +8,6 @@ export default class TesztKerdes {
       this.#szuloElem = szuloElem;
       this.#obj = obj;
       this.#index = index;
-      
-   
-      if (!this.#obj.valasztas || !Array.isArray(this.#obj.valasztas)) {
-        console.error(`Hiányzó vagy hibás 'valasztas' az index ${this.#index} kérdésnél.`);
-        return;
-      }
-  
       const kerdesElem = this.megjelenites();
       this.valaszEllenorzes(kerdesElem);
     }
